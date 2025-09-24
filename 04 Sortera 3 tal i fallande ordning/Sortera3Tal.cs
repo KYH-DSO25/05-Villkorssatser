@@ -10,13 +10,14 @@ Console.Write("   2: "); double second = double.Parse(Console.ReadLine());
 Console.Write("   3: "); double third =  double.Parse(Console.ReadLine());
 double swap = 0;
 
+// Tänker oss att vi matar in 3 2 1
 if (first > second)
 {
     if (first > third)
     {
         swap = first;
         first = third;
-        third = swap;
+        third = swap;       // Nu har vi 1 2 3
     }
 
     if (first > second)
@@ -43,7 +44,7 @@ else if (second > third)
     }
 }
 
-Console.WriteLine("\nTalen i fallande ordning: {0} < {1} < {2}", first, second, third);
+Console.WriteLine("\nTalen i stigande ordning: {0} < {1} < {2}", first, second, third);
 
 //// Alternativ lösning:
 //Console.WriteLine("ALTERNATIV LÖSNING\nAnge tre heltal: ");
